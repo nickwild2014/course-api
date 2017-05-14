@@ -1,4 +1,4 @@
-package io.javabrains.springbootstarter.topic;
+package com.java.springboot.topic;
 
 import java.util.List;
 
@@ -16,25 +16,25 @@ public class TopicController {
 	private TopicService topicService;
 
 	@RequestMapping("/topics")
-	public List<Topic> getAllTopic() {
+	public List<TopicBean> getAllTopic() {
 		return topicService.getAllTopics();
 	}
 	
 	@RequestMapping("/topics/{id}")
-	public Topic getTopic(@PathVariable String id)
+	public TopicBean getTopic(@PathVariable String id)
 	{
 		return topicService.getTopic(id);
 	}
 	
 	@RequestMapping(method=RequestMethod.POST,value="/topics")
-	public void addTopic(@RequestBody Topic topic)
+	public void addTopic(@RequestBody TopicBean topic)
 	{
 		topicService.addTopic(topic);
 		
 	}
 	
 	@RequestMapping(method=RequestMethod.PUT,value="/topics/{id}")
-	public void updateTopic(@RequestBody Topic topic,@PathVariable String id)
+	public void updateTopic(@RequestBody TopicBean topic,@PathVariable String id)
 	{
 		System.out.println("id "+id);
 		System.out.println("topic "+topic);

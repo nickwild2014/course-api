@@ -1,18 +1,18 @@
-package io.javabrains.springbootstarter.topic;
+package com.java.springboot.topic;
 
-public class Topic {
+public class TopicBean {
 	
 	private String id;
 	
 	private String name;
 	private String description;
 	
-	public Topic()
+	public TopicBean()
 	{
 		
 	}
 	
-	public Topic(String id, String name, String description) {
+	public TopicBean(String id, String name, String description) {
 		super();
 		this.id = id;
 		this.name = name;
