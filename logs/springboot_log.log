@@ -13,3 +13,15 @@
 [INFO ] 2017-05-14 14:20:40.376 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
 [INFO ] 2017-05-14 14:20:47.813 [http-nio-3000-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
 [INFO ] 2017-05-14 14:20:47.831 [http-nio-3000-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+[INFO ] 2017-09-12 18:55:11.287 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 2568 ms
+[INFO ] 2017-09-12 18:55:11.960 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b3fd41: startup date [Tue Sep 12 18:55:08 IST 2017]; root of context hierarchy
+[INFO ] 2017-09-12 18:55:12.094 [main] RequestMappingHandlerMapping - Mapped "{[/topics/{id}]}" onto public com.java.springboot.topic.TopicBean com.java.springboot.topic.TopicController.getTopic(java.lang.String)
+[INFO ] 2017-09-12 18:55:12.095 [main] RequestMappingHandlerMapping - Mapped "{[/topics],methods=[POST]}" onto public void com.java.springboot.topic.TopicController.addTopic(com.java.springboot.topic.TopicBean)
+[INFO ] 2017-09-12 18:55:12.095 [main] RequestMappingHandlerMapping - Mapped "{[/topics]}" onto public java.util.List<com.java.springboot.topic.TopicBean> com.java.springboot.topic.TopicController.getAllTopic()
+[INFO ] 2017-09-12 18:55:12.095 [main] RequestMappingHandlerMapping - Mapped "{[/topics/{id}],methods=[PUT]}" onto public void com.java.springboot.topic.TopicController.updateTopic(com.java.springboot.topic.TopicBean,java.lang.String)
+[INFO ] 2017-09-12 18:55:12.095 [main] RequestMappingHandlerMapping - Mapped "{[/topics/{id}],methods=[DELETE]}" onto public void com.java.springboot.topic.TopicController.deleteTopic(java.lang.String)
+[INFO ] 2017-09-12 18:55:12.098 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2017-09-12 18:55:12.098 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2017-09-12 18:55:12.126 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2017-09-12 18:55:12.126 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2017-09-12 18:55:12.211 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
